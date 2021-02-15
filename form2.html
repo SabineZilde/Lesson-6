@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form send="POST">
         <p>
@@ -13,13 +15,22 @@
         </p>
         <h1>Add todo item.</h1>
         <div>
-            <label for="task-name-input-field">Task name:</label><br>
-            <input type="text" id="task-name-input-field" name="task" value="" placeholder="Please enter task name...">
+            <div>
+                <label for="task-name-input-field">Task name:</label>
+            </div>
+            <div>
+                <input type="text" id="task-name-input-field" name="task" value=""
+                    placeholder="Please enter task name...">
+            </div>
         </div>
         <br>
         <div>
-            <label for="task-deskription">Task deskription:</label><br>
-            <textarea name="description" id="task-deskription" cols="50" rows="20"></textarea>
+            <div>
+                <label for="task-deskription">Task deskription:</label>
+            </div>
+            <div>
+                <textarea name="description" id="task-deskription" cols="50" rows="20"></textarea>
+            </div>
         </div>
         <br>
         <div>
@@ -29,7 +40,9 @@
         </div>
         <br>
         <div>
-            <label for="choose-category">Choose category</label><br>
+            <div>
+                <label for="choose-category">Choose category</label>
+            </div>
             <select name="category" id="choose-category">
                 <option value="">Choose category</option>
                 <option value="important">Important</option>
@@ -42,4 +55,5 @@
         </div>
     </form>
 </body>
+
 </html>
