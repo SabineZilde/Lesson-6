@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form send="POST">
+        <p>
+            <a href="index.html">Go back</a>
+        </p>
+        <h1>Add todo item.</h1>
+        <div>
+            <label for="task-name-input-field">Task name:</label><br>
+            <input type="text" id="task-name-input-field" name="task" value="" placeholder="Please enter task name...">
+        </div>
+        <br>
+        <div>
+            <label for="task-deskription">Task deskription:</label><br>
+            <textarea name="description" id="task-deskription" cols="50" rows="20"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="hidden" name="checkbox" value="0" id="">
+            <input type="checkbox" name="checkbox" value="1" id="completed">
+            <label for="completed">Is completed?</label>
+        </div>
+        <br>
+        <div>
+            <label for="choose-category">Choose category</label><br>
+            <select name="category" id="choose-category">
+                <option value="">Choose category</option>
+                <option value="important">Important</option>
+                <option value="not-important">Not important</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Add todo">
+        </div>
+    </form>
+</body>
+</html>

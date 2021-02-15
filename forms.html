@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <div>
+            <label for="name-input-field">Name:</label>
+            <input type="text" name="yourname" id="name-input-field" value="Prefilled field" disabled>
+        </div>
+        <div>
+            <label for="psw-input-field">Password:</label>
+            <input type="password" name="password" id="psw-input-field" placeholder="Password" required>
+        </div>
+        <div>
+            <input type="hidden" name="checkbox" value="0" id="">
+            <input type="checkbox" name="checkbox" value="1" id="agree-checkbox">
+            <label for="agree-checkbox">Agree with therms and conditions</label>
+        </div>
+        <div>
+            <input type="checkbox" name="checkbox" id="newsletter-checkbox" checked>
+            <label for="newsletter-checkbox">Get the newsletter</label>
+        </div>
+        <div>
+            <input type="checkbox" name="checkbox" id="newsletter-checkbox" checked disabled>
+            <label for="newsletter-checkbox">Get the newsletter muahahahahah</label>
+        </div>
+        <h5>Gender:</h5>
+        <div>
+            <input type="radio" name="gender" value="F" id="gender-female">
+            <label for="gender-female">Female</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="M" id="gender-male">
+            <label for="gender-male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="O" id="gender-other" checked>
+            <label for="gender-other">Other</label>
+        </div>
+        <div>
+            <label for="country-select">Country:</label>
+            <select name="country" id="country-select" multiple>
+                <!-- multiple allows to select multiple options -->
+                <option value="">Select one...</option>
+                <optgroup label="Baltics">
+                    <option value="lv">Latvia</option>
+                    <option value="ee" selected>Estonia</option>
+                    <option value="lt">Lithuania</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="de">Germany</option>
+                    <option value="no">Norway</option>
+                </optgroup>
+                <!-- selected will be as defailt, otherwise the 1st one is default -->
+            </select>
+        </div>
+        <div>
+            <label for="comment-text">Comment:</label>
+            <textarea name="comment" id="comment-text" cols="50" rows="10">
+Type here for default text to appear in the textarea window.
+            </textarea>
+        </div>
+        <div>
+            <input type="submit" value="Click here to submit">
+        </div>
+        <div>
+            <input type="button" name="button" id="">
+
+        </div>
+    </form>
+
+    <p>Hit cmd + / to create the specific line as a comment (not visible in the browser)</p>
+    <!-- This is a comment -->
+
+    <!-- kebab-case
+    snake_case
+    camelCase
+    PascalCase (or UpperCamelCase) -->
+
+    <!--file:///Users/sabinezilde/Desktop/Accenture/PreBootcamp/Lesson-6/Lesson-6/forms.html
+        ?password=aaa
+        &checkbox=0
+        &checkbox=on
+        &gender=O
+        &country=no
+        &comment=Type+here+for+default+text+to+appear+in+the+textarea+window.
+        %0D%0A++++++++++++ -->
+
+    <!-- protocol - domain name - resource - url params (start with ?) - hash params (starts with #)-->
+    <!-- https://latvia.lv/users?key=value&key2=value2 -->
+
+    <!-- LF -- mac / linux %OA or \n = new line
+    CRLF -- wimdows
+    CR -- legacy mac (old computers) -->
+</body>
+
+</html>
